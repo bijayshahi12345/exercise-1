@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fdfdfd;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #0077cc;
+  }
+  
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20232a;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .nav-links a {
+    margin-left: 1rem;
+    color: white;
+  }
+
+  .spotlight {
+    display: flex;
+    padding: 1.5rem;
+    background: #f4f4f4;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .spotlight img {
+    max-width: 100px;
+    width: 50%;
+    height: auto;
+  }
+  
+  .spotlight-text h2 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .sidebar {
+    background: #e9e9e9;
+    padding: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .articles article {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  .articles article img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .spotlight img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+
+  .articles h4 {
+    margin: 0.5rem 0;
+  }
+  
+
+  .site-footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #20232a;
+    color: white;
+  }
+  
+  .footer-links a {
+    margin: 0 1rem;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .spotlight {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .site-header, .site-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  
+    .nav-links a {
+      margin-left: 0;
+    }
+  }
+  
